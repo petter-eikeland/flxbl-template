@@ -50,7 +50,6 @@ jobs:
     runs-on: ubuntu-latest
     container: ghcr.io/petter-eikeland/sfp:39.8.5
     needs: bump_versions
-    if: needs.bump_versions.result == 'success' && github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v4
         with:
@@ -75,7 +74,6 @@ jobs:
     runs-on: ubuntu-latest
     container: ghcr.io/petter-eikeland/sfp:39.8.5
     needs: quickbuild
-    if: github.ref == 'refs/heads/main'
     environment:
       name: SIT
     concurrency: sit
