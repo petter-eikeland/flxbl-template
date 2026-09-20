@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Sample UI Bundle</masterLabel>
+    <description>Sample UI Bundle metadata demonstrating the UIBundle metadata type.</description>
+    <isActive>true</isActive>
+    <version>1.0.0</version>
+</UIBundle>

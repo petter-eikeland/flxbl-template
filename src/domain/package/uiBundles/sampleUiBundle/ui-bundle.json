@@ -1,0 +1,7 @@
+{
+  "outputDir": "dist",
+  "routing": {
+    "fallback": "index.html",
+    "trailingSlash": "auto"
+  }
+}
