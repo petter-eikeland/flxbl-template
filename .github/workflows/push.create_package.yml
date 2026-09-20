@@ -48,7 +48,7 @@ jobs:
   quickbuild:
     name: 'Quickbuild packages'
     runs-on: ubuntu-latest
-    container: ghcr.io/petter-eikeland/sfp:39.8.4
+    container: ghcr.io/petter-eikeland/sfp:39.8.5
     needs: bump_versions
     if: needs.bump_versions.result == 'success' && github.ref == 'refs/heads/main'
     steps:
@@ -73,7 +73,7 @@ jobs:
   deploy-to-sit:
     name: 'Deploy to SIT'
     runs-on: ubuntu-latest
-    container: ghcr.io/petter-eikeland/sfp:39.8.4
+    container: ghcr.io/petter-eikeland/sfp:39.8.5
     needs: quickbuild
     if: github.ref == 'refs/heads/main'
     environment:
@@ -91,7 +91,7 @@ jobs:
 
       - name: Authenticate to SIT sandbox
         run: |
-          echo "${{ secrets.SIT_SFDX_AUTH_URL }}" > ./authfile
+          echo "${{ secrets.PROD_SFDX_AUTH_URL }}" > ./authfile
           sf org login sfdx-url -f authfile -a sit
 
       - name: 'Deploy to SIT'
