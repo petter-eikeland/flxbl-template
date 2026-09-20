@@ -102,8 +102,7 @@
 	"sfdcLoginUrl": "https://login.salesforce.com",
 	"sourceApiVersion": "67.0",
 	"packageAliases": {
-		"platform-base": "0HoJ8000000GmasKAC",
-		"package": "0HoWV0000000N6H0AU"
+		"platform-base": "0HoWV0000000N6H0AU"
 	},
 	"plugins": {
 		"sfp": {
