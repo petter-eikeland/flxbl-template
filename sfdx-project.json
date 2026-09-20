@@ -22,18 +22,17 @@
 		{
 			"path": "src/core/platform-base",
 			"package": "platform-base",
-			"versionNumber": "0.2.0.NEXT"
+			"versionNumber": "0.2.0.NEXT",
+			"ignoreOnStage": [
+				"quickbuild",
+				"build",
+				"deploy"
+			]
 		},
 		{
 			"path": "src/domain/package",
 			"package": "package",
-			"versionNumber": "0.3.0.NEXT",
-			"dependencies": [
-				{
-					"package": "platform-base",
-					"versionNumber": "0.2.0.LATEST"
-				}
-			]
+			"versionNumber": "0.3.0.NEXT"
 		},
 		{
 			"path": "global/platform-ui",
@@ -104,7 +103,7 @@
 	"sourceApiVersion": "67.0",
 	"packageAliases": {
 		"platform-base": "0HoJ8000000GmasKAC",
-		"package": "0HoJ8000000GmanKAC"
+		"package": "0HoWV0000000N6H0AU"
 	},
 	"plugins": {
 		"sfp": {
