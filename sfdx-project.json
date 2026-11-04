@@ -83,6 +83,12 @@
 			]
 		},
 		{
+			"path": "global/reconcile-profile",
+			"package": "reconcile-profile",
+			"versionNumber": "0.1.0.0",
+			"reconcileProfiles": false
+		},
+		{
 			"path": "global/src-env-specific-alias-post",
 			"package": "src-env-specific-alias-post",
 			"versionNumber": "0.1.0.0",
