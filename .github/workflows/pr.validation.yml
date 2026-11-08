@@ -28,7 +28,7 @@ jobs:
   validate:
     name: Validate Changed Packages
     runs-on: ubuntu-latest
-    container: ghcr.io/petter-eikeland/sfp:39.8.6
+    container: ghcr.io/petter-eikeland/sfp:39.8.7
     steps:
       - uses: actions/checkout@v4
         with:
