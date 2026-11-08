@@ -70,17 +70,7 @@
 			"path": "global/platform-access",
 			"package": "platform-access",
 			"versionNumber": "0.1.0.0",
-			"reconcileProfiles": false,
-			"dependencies": [
-				{
-					"package": "platform-base",
-					"versionNumber": "0.1.0.LATEST"
-				},
-				{
-					"package": "package",
-					"versionNumber": "0.1.0.LATEST"
-				}
-			]
+			"reconcileProfiles": true
 		},
 		{
 			"path": "global/src-env-specific-alias-post",

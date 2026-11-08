@@ -1,5 +1,6 @@
 # sf files
 **/profiles/*
+!global/reconcile-profile/**
 **/objectTranslations/*-en_US/*
 **/19-no.standardValueSetTranslation-meta.xml
 **/13-no.standardValueSetTranslation-meta.xml
@@ -55,3 +56,5 @@
 *8.field-meta.xml
 *9.field-meta.xml
 *0.field-meta.xml
+
+**/graphql.config.yml
